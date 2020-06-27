@@ -1,0 +1,90 @@
+﻿
+
+/* Header */
+
+.Container {
+    margin-top: 20px;
+    width: 60%;
+    min-width: 700px;
+    margin: 0px auto;
+}
+
+header {
+    background-color: #34282C;
+    color: white;
+    margin-top: 0px;
+    padding-top: 1em;
+    padding-right: 0em;
+    display: block;
+    height: 120px;
+    text-align: center;
+    padding-left: 0px;
+    background-position: right;
+    text-indent: 50px;
+}
+
+.Nav {
+    padding: 60px;
+    margin: 60px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-right: 30px;
+    margin: 15px;
+    text-align: center;
+}
+li a {
+    color: black;
+}
+
+li {
+    color: black;
+    display: inline;
+    padding: 8px;
+    
+}
+
+.intro {
+    border: 1px solid black;
+    outline-style: solid; 
+    outline-color: white; 
+    margin: 0;
+    text-align: center;
+    font-size: larger;
+    color: black
+}
+
+/* Page background colors. */
+body.Home {
+    /* Home page background */
+    background-color: #ff3333;
+}
+body.Char {
+    /* Character page background */
+    background-color: orange;
+}
+body.Char {
+    /* Character page background */
+    background-color: orange;
+}
+body.Story {
+    /* Story page background */
+    background-color: #ffff33;
+}
+body.ContactUs {
+    /* ContactUs page background */
+    background-color: green;
+}
+body.behindScene {
+    /* behindScene page background */
+    background-color: #6666ff;
+}
+body.Thanks {
+    /* Special Thanks background */
+    background-color: purple;
+}
+body.Blank {
+    /* Page that needs to be created. */
+    background-color: pink;
+}

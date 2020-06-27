@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17C23E97-49EF-48C9-9084-6B1B114A0661}"
+	ProjectSection(SolutionItems) = preProject
+		behindScene.html = behindScene.html
+		Blank.html = Blank.html
+		Char.html = Char.html
+		ContactUs.html = ContactUs.html
+		Home.html = Home.html
+		..\..\..\Desktop\New folder (2)\Logo.jpg = ..\..\..\Desktop\New folder (2)\Logo.jpg
+		Story.html = Story.html
+		Style.css = Style.css
+		Thanks.html = Thanks.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D47078C-9EB4-4CD2-9E11-80B2D9022AEE}
+	EndGlobalSection
+EndGlobal
