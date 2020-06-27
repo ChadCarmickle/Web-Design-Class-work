@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title> Javascript assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+    
+<!-- Chris showed me this :D -->
+<body onload="getCurrentDateTime()" id="Body_ID">
+    <header>
+
+        <!-- Header Text -->
+        <p class="HeaderText">Javascript assignment 2</p>
+
+        <!-- id for javascript
+             Class for Css
+        -->
+        <div id="TimeDiv" class="TimeDiv"> </div> <br /> 
+        <div id="LocalTimeDiv" class="LocalTimeDiv"> </div> 
+    </header>
+
+
+    <!-- Clock  Part 1 -->
+    <!-- Obtained and modified from https://www.youtube.com/watch?v=JyjFGflTf_E -->
+    <script type="text/javascript">
+
+        // SetInterval executes a function, repeatedly at specified time.
+        // 0 represents how many miliseconds.
+        setInterval(getCurrentDateTime, 250);
+        setInterval(GetTime, 250);
+        // Taking a to get the time.
+        function GetTime() {                                                                           // .toLocaleTimeString(); was obtained from: https://stackoverflow.com/questions/10599148/how-do-i-get-the-current-time-only-in-javascript
+            document.getElementById("LocalTimeDiv").innerHTML = new Date().toLocaleTimeString();
+
+        }
+        function getCurrentDateTime() {                                                                           // .toLocaleTimeString(); was obtained from: https://stackoverflow.com/questions/10599148/how-do-i-get-the-current-time-only-in-javascript
+            document.getElementById("TimeDiv").innerHTML = new Date();
+
+        }
+    </script>
+
+    <!-- Div that contains everything -->
+    <div class="TopNav">
+
+        <button class="BackgoundBtn1" onclick="Change_Background(), Stop_Bg_Function() "> Start Background Timer  </button>
+        <button class="BackgoundBtn2" onclick="Stop_Background()">  Stop Background Timer  </button>
+        <button class="BackgoundBtn2" onclick="New_Page()">  Exam Answers  </button>
+
+        <center><p> To re-start the background press it twice. </p></center>
+    </div>
+
+    <script>
+
+        
+        var color = 0;  // Creating a variable for color. 
+        var Stop_Bg = false;    // Making a boolean to Start and stop changing background
+
+        // Starts the loop again and lets the user use the colors again. 
+        function Stop_Bg_Function() {
+            Stop_Bg = false; 
+        }
+        
+        function Change_Background() {
+            
+            // Setting a timer that will change the background every 3 seconds 
+            var Clock = setTimeout(function () { Change_Background() }, 3000);
+
+            // Checks if boolean is true if so cycle of colors starts 
+            if (Stop_Bg == false) {
+                            if (color == 0) {
+                                document.body.style.backgroundColor = "#0000ff";
+                                color = color + 1;
+                            }
+                                    else if (color == 1) {
+                                        document.body.style.backgroundColor = "#0000cc";
+                                        color = color + 1;
+                                    }
+                                            else {
+                                                document.body.style.backgroundColor = "#00007f";
+                                                color = 0;
+                                            }
+            }
+            //If stop_Bg is false stops the clock and backgrounds 
+            else {
+            clearTimeout(Clock);
+            }
+         }
+            // Boolean is set to true and stops the clock and return background color to grey. 
+        function Stop_Background() { 
+            Stop_Bg = true; 
+            document.body.style.backgroundColor = "#666666";
+        }
+    </script>
+
+    <input class="TextBox" type="text" placeholder="Do not type here." onclick="Warning_Message()"/>
+    
+    <script>
+        function Warning_Message() {
+            alert("It said not to type there...");
+        }
+    </script>
+
+    <script>
+        function New_Page() {
+           // window.open("href = Page1.html");
+            window.open("Page1.html");
+        }
+    </script>
+
+
+</body>
+
+</html>
