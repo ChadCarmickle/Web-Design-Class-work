@@ -1,0 +1,85 @@
+﻿<!--
+    Author: Chad Carmickle
+    Last updated: 3/22/18
+    Purpose: Custom website for client to post videos and include infomation about
+    a various characters.
+
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body class="ContactUs">
+
+    <div class="Container">
+
+        <header><h1 class="logotext"> The meaning of friends </h1></header>
+
+        <!-- Top navigation bar-->
+        <div class="TopNav">
+            <a href="Home.html"> Home |</a>
+            <a href="Video.html"> Episodes |</a>
+            <a href="ContactUs.html"> Contact us |</a>
+
+            <div class="Dropbox">
+                <button class="Drop_btn"> Story, character & more</button>
+                <div class="Dropbox_Content">
+                    <a href="Story.html"> Story </a>
+                    <a href="Char.html"> Characters </a>
+                    <a href="behindScene.html"> behind the Scene </a>
+                    <a href="Thanks.html"> Special Thanks </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <p class="FormText"> Required infomation is marked with an asterisk (*). </p>
+        <!-- Got most of the knowledge or code from https://www.w3schools.com/tags/att_textarea_form.asp and chapter about forms in Textbook / Independent challenge. -->
+        <form method="post" action="ccarmickle1@ivytech.edu">
+            <!-- Got this from https://stackoverflow.com/questions/18239513/how-do-i-code-my-submit-button-go-to-an-email-address?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa thought it would be fun to throw in there. -->
+
+            <fieldset>
+                <legend class="FormTitle">* Name </legend>
+                <input class="FormBox" type="text" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend class="FormTitle">* Email: </legend>
+                <input class="FormBox" type="text" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend class="FormTitle"> Comments: </legend>
+                <!-- Made text vansih with help of https://stackoverflow.com/questions/1626107/text-in-html-field-to-disappear-when-clicked?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa -->
+                <textarea class="FormTextArea" rows="4" cols="50" placeholder="Enter Text here..."></textarea>
+
+            </fieldset>
+
+            <input class="inputbtn" type="submit" value="Submit" />
+
+        </form>
+
+
+
+        <footer>
+            Copyright &copy The meaning of friends.
+            <br> ccarmickle1@ivytech.edu
+        </footer>
+    </div>
+</body>
+
+
+
+
+
+
+
+</html>
+
+

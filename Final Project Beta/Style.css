@@ -1,0 +1,209 @@
+﻿/* To do list: 
+    Edit the Nav bar and make a dropbox for Contact us, Behind the Scenes, Special thanks and Episodes 
+    Replace all cat pictures with client's picture. 
+    Replace all Placeholder videos with client's episodes 
+    Fix the placement of the picture to text. 
+    Fix the footer.  
+    Play around with font. 
+    Add notes and comments.
+    Does Contact us have to work if so figure out how it can. 
+*/
+
+body {
+    font-family: font-family Verdana, Arial, sans-serif;
+}
+
+/* Header */
+
+.Container {
+    width: 80%;
+    height: auto;          /* To be fixed */
+    margin: 0px auto;
+    background-color: gray; 
+}
+
+header {
+    background-color: #34282C;
+    color: white;
+    margin-top: 0px;
+    padding-top: 1em;
+    padding-right: 0em;
+    display: block;
+    height: 120px;
+    text-align: center;
+    padding-left: 0px;
+    background-position: right;
+    text-indent: 50px;
+}
+
+
+.Nav {
+    
+    margin: 60px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-right: 30px;
+    margin: 15px;
+    text-align: center;
+}
+li a {
+    color: black;
+}
+
+li {
+    color: black;
+    display: inline;
+    padding: 8px;
+    
+}
+
+.wrap {
+    padding-top: 50px; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black; 
+    line-height: 30px; 
+}
+
+.StoryText {
+    padding-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    line-height: 50px;
+}
+
+.intro {
+    margin-bottom: 0px;  
+    padding-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    line-height: 40px;
+}
+
+.Picture1 {
+    float: left;
+    padding: 30px;
+    padding-left: 30px;
+    margin: 0, auto;
+}
+
+.picture2 { 
+    float: left; 
+}
+.Picture3 { 
+    float: right; 
+}
+
+
+.Act { 
+    color: white; 
+    font-size: xx-large; 
+    text-align: center; 
+    border-bottom: dotted 5px; 
+    padding-bottom: 5px; 
+}
+.EndText {
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    font: 'Comic Sans MS';
+}
+
+.CharName {
+    font-family: cursive, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+
+.Sum {
+    padding: 2px;
+    font-family: 'Crafty Girls', cursive, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 25px;
+    line-height: 45px;
+}
+
+
+
+form {
+    padding: 50px;
+    margin: 0, auto;
+    text-align: left;
+    line-height: 50px;
+}
+
+.FormText { 
+    font-size: 25px; 
+    padding-top: 3px; 
+    margin: 0, auto; 
+}
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+.Names {
+    color: snow;
+    font-size: xx-large;
+    text-align: center;
+}
+.Episode {
+    padding-left: 100px;
+}
+
+footer {
+    position: fixed;
+    width: 100%; 
+    background-color: #A9A9A9;
+    text-align: center;
+    padding: 0px; 
+    margin: 0, auto; 
+}
+.footerText {
+    text-align: center;
+}
+
+
+/* Page background colors. */
+body.Home {
+    /* Home page background */
+    background-color: #ff3333;
+}
+body.Char {
+    /* Character page background */
+    background-color: orange;
+}
+body.Char {
+    /* Character page background */
+    background-color: orange;
+}
+body.Story {
+    /* Story page background */
+    background-color: #ffff33;
+}
+body.ContactUs {
+    /* ContactUs page background */
+    background-color: green;
+}
+body.behindScene {
+    /* behindScene page background */
+    background-color: #6666ff;
+}
+body.Thanks {
+    /* Special Thanks background */
+    background-color: purple;
+}
+body.Video {
+    /* Page that needs to be created. */
+    background-color: pink;
+}
