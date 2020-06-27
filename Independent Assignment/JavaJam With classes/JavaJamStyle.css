@@ -1,0 +1,150 @@
+ 
+
+header	 	{ 
+			height:120px;	
+   			width: 1000px;
+			margin: auto;
+			box-shadow:0 0 2px 3px black;
+			text-align: center;
+			background-color: #D2B48C;
+			
+    			
+		} 
+.header_text 
+		{ 
+			width: 1000px;
+			height:120px;
+			font-size: 50px;
+			line-height: 120px;
+    		
+			color: #000000;
+			font-family: garamond, Times, serif;
+
+			
+			background-size: 160px 120px;
+			background-image: url(images/Logo.jpg);
+			margin: auto;
+			background-repeat: no-repeat; 
+
+		}
+
+nav        	
+		{ 
+			width:750px;
+			margin:0 auto;
+			text-align: center;
+    
+           	}
+
+nav a      	
+		{
+		
+			position: center;
+	 		padding-right: 30px;
+	 		text-align: center; 
+	 		font-size: 25px;
+         		color: #0645AD ;
+    	  	}
+body 		
+		{
+			background-image: url(images/JavaPick.gif);
+			height: 700px;
+			width 1200px;
+			margin: 8px;  
+		}
+
+
+main           { 
+			 
+			background: #E8D9C5; 
+			margin-top:-12px;
+           	}
+
+.Main_Header	{
+			text-align: left;
+	  		font-size: 30px;
+	  		font-family: Arial, Helvetica, sans-serif;
+		}
+
+.Intro
+		{
+			width: 800px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #6a12:08 AM 3/2/20185b46;
+		}
+
+.feature_head
+		{	
+	  		font-size: 25px;
+			color: #34282C; 
+	  		font-family: "Times New Roman", Cursive, serif; 
+		}
+
+.feature_parg  
+		{
+			font-family: "cursive", Times, serif;
+			color: #8b4513;
+			text-indent: 2.0em;
+			
+		}
+
+.number
+		{
+			color: #0645AD;
+		}
+ 
+
+menu 	   	{ 
+			 
+			background: #E8D9C5; 
+			padding: 0%; 
+           	}
+
+.Product_desc  
+		{
+			font-family: "cursive", Times, serif;
+			color: #8b4513;
+			text-indent: 2.0em;
+			margin-top:-12px;
+		}
+
+.Music_sen	
+		{
+			text-align: center;
+			color: #8b4513; 
+			font-family: "cursive", Times, serif;
+		}
+
+
+.Month 		{
+
+			background-color: #D2B48C;
+			margin-top:-12px;
+			font-family: "cursive", Times, serif;
+		}
+
+
+ 
+footer 		
+		{
+       			line-height: normal;
+			text-align: center;
+			background-color: #D2B48C;
+			position: fixed;
+			bottom: 0px;
+   			left: 0px;
+    			right: 0px;
+    			margin-bottom: 0px;
+			border-top: 2px solid black;
+        	}
+
+.Music_Page 
+		{ 
+			 
+			background: #E8D9C5;
+			height: 600px;  
+			
+           	}
+
+
+
