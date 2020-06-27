@@ -1,0 +1,287 @@
+﻿/* 
+   Hotel Natoma style sheet 
+   Filename: styles.css
+
+   Author:   Chad Carmickle
+   Date:     4/3/2018
+   HTML5 and CSS3 Illustrated Unit J, Independent Challenge 3
+ */
+
+
+
+
+
+/* reset styles */
+form, input, label, legend, textarea {
+    border: 0;
+    padding: 0;
+    margin: 0;
+} 
+
+html {
+   font-size: 20px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ul {
+   list-style-type: none;
+}
+
+/* body and page container */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+   position: relative;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   left: auto;
+   right: 1em;
+   top: 1em;
+   background-color: white;
+   color: #082008;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   padding: 0.5em;
+   background-color: #082008;
+   border-top-left-radius: 22px;
+}
+h1 img {
+   margin: 0 auto;
+   display: block;
+}
+
+/* site navigation */
+nav.sitenavigation {
+   padding: 2%;
+   text-align: center;
+   background-color: #93ad78;
+}
+nav.sitenavigation li {
+   margin: 0 1em;
+   display: inline-block;
+}
+nav.sitenavigation a:link {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+nav.sitenavigation a:visited {
+   color: #dddddd;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   text-shadow: 0 0 6px #082008;
+}
+
+/* main content */
+article {
+   padding: 2%;
+   background-color: linen;
+   overflow: auto;
+}
+article h2 {
+   margin-bottom: 0.6em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.6em;
+   line-height: 2em;
+   font-weight: 400;
+   text-align: center;
+}
+article h3 {
+   margin: 0 0 1em 1em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.2em;
+   clear: right;
+   text-align: center;
+}
+article figure {
+   max-width: 100%;
+   margin: 0 0 1em 1em;
+   float: right;
+}
+article figcaption {
+   text-align: center;
+   font-weight: bold;
+}
+article p {
+   margin: 0 2em 1em;
+}
+/* Form Styles */
+form { 
+    padding: 0.5em; 
+    background-color: #082008; 
+}
+
+/* Fieldset styles */ 
+fieldset { 
+    margin-bottom: 0.5em; 
+    padding: 2.5em 2% 0.5em; 
+    position: relative; 
+    background-color: #93AD78; 
+}
+
+.Contact_Info, .Reservation_Info, .Bed_Info, .Checkin_field, .Checkout_field, .Park, .additional_Info, .submit_btn {
+    padding-top: 0.4em;
+    border: 2px solid, #082008;
+    font-size: 1.25em;
+    font-family: PTSansCaption, Georgia, 'Times New Roman', serif;
+}
+
+/* Step D- Part 2? 
+    For legend elements that are direct childeren of fieldset elements that are themselves direct childeen of the form element, set the font size to 1.25em; the font family to 
+    a font stack including PTSansCaption, Georgia, Times new Toman, Times, and serif. And absoluely position the elements 0.6em from the top (hint: Use the selector form > fieldset > legend).  
+*/
+.Contact_Title, .Reservation_Title, .Bed_Title, .Checkin_Title, .Checkout_Title, .Add_Title {
+    font-size: 1.25em;
+    margin-top: 0.6em; 
+    font-family: PTSansCaption, Georgia, 'Times New Roman', Times, serif;
+}
+
+.Checkin_field {
+    width: 40%;
+    float: left;
+}
+
+.Checkout_field {
+    width: 40%;
+    float: right;
+}
+
+.Park {
+    clear: both;
+    padding: 0.5em 0; 
+    margin-bottom: 0; 
+    text-align: center; 
+}
+
+.submit_btn {
+    padding: 0.5em 0; 
+    margin-bottom: 0; 
+    text-align: center; 
+}
+
+/* Input text feild of party size  Step F */
+.Input_Party_Size { 
+    margin-right: 2em; 
+    width: 3em; 
+}
+
+.Submit_Btn { 
+    font-family: PTSansCaption, Georgia, 'Times New Roman', serif; 
+    background-color: #e3d5ba; 
+    font-size: 1.25em; 
+    border: 10px double; 
+}
+
+/* text field styles */
+input { 
+    padding: 0.2em; 
+    font-size: 1em; 
+}
+
+/* Style changes to the input fields in the Contact Info section. */
+.input_Name, .input_Email, .input_Phone {
+    padding-left: 5px;
+    width: 20em; 
+}
+.input_Phone { 
+    width: 12em; 
+}
+
+.Park_Ttitle { 
+    text-align: left; 
+}
+/* Label styles */
+label {
+    margin-bottom: 0.2em;
+    line-height: 1.6em;
+}
+
+.Reservation_Info { 
+    line-height: 45px; 
+}
+
+.Reservation_Title { 
+    padding-top: 50px; 
+}
+.lbl_Name, .lbl_Email, .lbl_Phone {
+    margin: 0.6em 0;
+    display: inline-block;
+}
+
+/* Labels within Bed Info */
+.Bed_lbl {
+margin-right: 1.6em; 
+
+}
+
+/* Labels for check-in / check-out */
+
+.Checkin_Title, .Checkout_Title {
+    left: -10000px;
+}
+
+.Car { 
+    width: 3em; 
+}
+
+.textarea { 
+    width: 99%; 
+    display: block; 
+}
+
+
+/* footer section */
+footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #082008;
+    border-bottom-right-radius: 22px;
+}
+
+/* print styles */
+@media print {
+   article {
+      width: 100%;
+   }
+   article, body, .container, footer {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}

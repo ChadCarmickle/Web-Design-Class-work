@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Hotel Natoma - Reservations</title>
+      <!--
+         Hotel Natoma Reservations page
+         Filename: reserve.html
+      
+         Author:   Chad Carmickle   
+         Date:     4/3/2018
+         HTML5 and CSS3 Illustrated Unit J, Independent Challenge 3
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="Images/favicon.ico">
+      <link rel="apple-touch-icon" href="Images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="Images/android.png">
+   </head>
+   <body>
+      <div class="container">
+         <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+         <header>
+            <h1><a href="index.html"><img src="Images/logo.gif" width="368" height="65" alt="Hotel Natoma"></a></h1>
+         </header>
+         <nav class="sitenavigation">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="nearby.html">What&#39;s Nearby</a></li>
+               <li><a href="museums.html">Museums</a></li>
+               <li><a href="greensf.html">Green SF</a></li>
+               <li><a href="reserve.html">Reservations</a></li>
+            </ul>
+         </nav>
+         <article id="contentstart">
+            <h2>Reservations</h2>
+            
+		<form action="results.html">
+
+
+            <!-- Top part -->
+            <fieldset>
+
+                <!-- First Part of form Contact Info-->
+
+                            <fieldset class="Contact_Info">
+                                <legend class="Contact_Title"> Contact Infomation </legend>
+                                <label class="lbl_Name"> Name </label>
+                                <input type="text" class="input_Name" placeholder="Name..." />  <br />
+
+                                <label class="lbl_Email"> Email </label>
+                                <input type="text" class="input_Email" placeholder="Email..." /> <br />
+
+                                <label class="lbl_Phone"> Phone </label>
+                                <input type="text" class="input_Phone" placeholder="Phone..." /> <br />
+                            </fieldset>
+            </fieldset>
+
+            <!-- Middle part -->
+            <fieldset>
+
+                <!-- Second Part of form -->
+
+                <legend class="Reservation_Title"> Reservation Infomation </legend>
+                <fieldset class="Reservation_Info">
+                    <legend> Party Size </legend>
+                    <label class="Num_Party"> Number of party Size</label>
+                    <input type="text" id="Input_Num_Party" placeholder="Number of Party size" />
+                    <br />
+                    <label class="Num_Room"> Number of rooms required </label>
+                    <input type="text" id="Input_Num_Room" placeholder="Number of rooms" />
+                </fieldset>
+
+                <!-- Third part of form -->
+                <fieldset class="Bed_Info">
+                    <legend class="Bed_Title"> Bed Preference,</legend>
+
+                    <input type="radio" name="bed" id="KingQueen_bed" />
+                    <label class="Bed_lbl"> King/Queen </label>
+
+                    <input type="radio" name="bed" id="Twin_bed" />
+                    <label class="Bed_lbl"> Twin </label>
+
+                    <input type="radio" name="bed" id="Other_Bed" />
+                    <label class="Bed_lbl"> Other/Mix (Specify in additional infomation) </label>
+                </fieldset>
+
+                <!-- Check in form-->
+                <fieldset class="Checkin_field">
+                    <legend class="Checkin_Title"> Check-in Date, </legend>
+
+                    <!-- Drop box for all months, days and years 2019-2021 -->
+
+                    <select name="Month">
+                        <option value="Month_Jan"> 	January 	</option>
+                        <option value="Month_Feb"> 	Febuary 	</option>
+                        <option value="Month_March"> 	March 		</option>
+                        <option value="Month_April"> 	April 		</option>
+                        <option value="Month_May"> 	May 		</option>
+                        <option value="Month_June"> 	June 		</option>
+                        <option value="Month_July "> 	July 		</option>
+                        <option value="Month_Aug "> 	August 		</option>
+                        <option value="Month_Sep"> 	September 	</option>
+                        <option value="Month_Oct"> 	October 	</option>
+                        <option value="Month_Nov"> 	November 	</option>
+                        <option value="Month_Dec"> 	December 	</option>
+                    </select>
+
+
+                    <select name="Day">
+                        <option value="Day_1">   1 </option>
+                        <option value="Day_2">   2 </option>
+                        <option value="Day_3">   3 </option>
+                        <option value="Day_4">   4 </option>
+                        <option value="Day_5">   5 </option>
+                        <option value="Day_6">   6 </option>
+                        <option value="Day_7">   7 </option>
+                        <option value="Day_8">   8 </option>
+                        <option value="Day_9">   9 </option>
+                        <option value="Day_10"> 10 </option>
+                        <option value="Day_11"> 11 </option>
+                        <option value="Day_12"> 12 </option>
+                        <option value="Day_13"> 13 </option>
+                        <option value="Day_14"> 14 </option>
+                        <option value="Day_15"> 15 </option>
+                        <option value="Day_16"> 16 </option>
+                        <option value="Day_17"> 17 </option>
+                        <option value="Day_18"> 18 </option>
+                        <option value="Day_19 ">19 </option>
+                        <option value="Day_20 ">20 </option>
+                        <option value="Day_21"> 21 </option>
+                        <option value="Day_22"> 22 </option>
+                        <option value="Day_23"> 23 </option>
+                        <option value="Day_24"> 24 </option>
+                        <option value="Day_25"> 25 </option>
+                        <option value="Day_26 ">26 </option>
+                        <option value="Day_27 ">27 </option>
+                        <option value="Day_28"> 28 </option>
+                        <option value="Day_29"> 29 </option>
+                        <option value="Day_30"> 30 </option>
+                        <option value="Day_31"> 31 </option>
+                    </select>
+
+
+                    <select name="Year">
+                        <option value="Year_2019"> 2019 </option>
+                        <option value="Year_2020"> 2020 </option>
+                        <option value="Year_2021"> 2021 </option>
+                    </select>
+                </fieldset>
+
+                <!-- Check out form-->
+                <fieldset class="Checkout_field">
+                    <legend class="Checkout_Title"> Check-Out Date, </legend>
+
+                    <select name="Month">
+                        <option value="Month_Jan"> 	January 	</option>
+                        <option value="Month_Feb"> 	Febuary 	</option>
+                        <option value="Month_March"> 	March 		</option>
+                        <option value="Month_April"> 	April 		</option>
+                        <option value="Month_May"> 	May 		</option>
+                        <option value="Month_June"> 	June 		</option>
+                        <option value="Month_July "> 	July 		</option>
+                        <option value="Month_Aug "> 	August 		</option>
+                        <option value="Month_Sep"> 	September 	</option>
+                        <option value="Month_Oct"> 	October 	</option>
+                        <option value="Month_Nov"> 	November 	</option>
+                        <option value="Month_Dec"> 	December 	</option>
+                    </select>
+
+
+                    <select name="Day">
+                        <option value="Day_1">   1 </option>
+                        <option value="Day_2">   2 </option>
+                        <option value="Day_3">   3 </option>
+                        <option value="Day_4">   4 </option>
+                        <option value="Day_5">   5 </option>
+                        <option value="Day_6">   6 </option>
+                        <option value="Day_7">   7 </option>
+                        <option value="Day_8">   8 </option>
+                        <option value="Day_9">   9 </option>
+                        <option value="Day_10"> 10 </option>
+                        <option value="Day_11"> 11 </option>
+                        <option value="Day_12"> 12 </option>
+                        <option value="Day_13"> 13 </option>
+                        <option value="Day_14"> 14 </option>
+                        <option value="Day_15"> 15 </option>
+                        <option value="Day_16"> 16 </option>
+                        <option value="Day_17"> 17 </option>
+                        <option value="Day_18"> 18 </option>
+                        <option value="Day_19 ">19 </option>
+                        <option value="Day_20 ">20 </option>
+                        <option value="Day_21"> 21 </option>
+                        <option value="Day_22"> 22 </option>
+                        <option value="Day_23"> 23 </option>
+                        <option value="Day_24"> 24 </option>
+                        <option value="Day_25"> 25 </option>
+                        <option value="Day_26 ">26 </option>
+                        <option value="Day_27 ">27 </option>
+                        <option value="Day_28"> 28 </option>
+                        <option value="Day_29"> 29 </option>
+                        <option value="Day_30"> 30 </option>
+                        <option value="Day_31"> 31 </option>
+                    </select>
+
+
+                    <select name="Year">
+                        <option value="Year_2019"> 2019 </option>
+                        <option value="Year_2020"> 2020 </option>
+                        <option value="Year_2021"> 2021 </option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="Park">
+                    <legend class="Park_Ttitle"> Parking</legend>
+                    <label> I need parking for: </label>
+                    <input class="Car" type="text" />
+
+                    <label> vehicle(s). </label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <fieldset class="additional_Info">
+                    <legend class="Add_Title"> additional Infomation </legend>
+                    <label> Feedback, Special requests, or other infomation</label> <br />
+                    <textarea rows="8" cols="80" name="comment"> </textarea>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <fieldset class="submit_btn">
+                    <input type="button" id="Submit_Btn" value="Submit" />
+                </fieldset>
+            </fieldset>
+
+</form>
+         </article>
+         <footer>
+           <p>564 Natoma St. &#8226; San Francisco, CA 94103 &#8226; (415) 555-8378</p>
+         </footer>
+      </div>
+   </body>
+</html>
