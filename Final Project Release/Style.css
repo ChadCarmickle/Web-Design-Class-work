@@ -1,0 +1,308 @@
+﻿
+/*  Style sheet for all the pages */
+body {
+    font-family: font-family Verdana, Arial, sans-serif;
+    
+}
+    /* Page background colors. */
+    body.Home {
+        /* Home page background */
+        background-color: #ff3333;
+    }
+    body.Char {
+        /* Character page background */
+        background-color: orange;
+    }
+    body.Char {
+        /* Character page background */
+        background-color: orange;
+    }
+    body.Story {
+        /* Story page background */
+        background-color: #ffff33;
+    }
+    body.ContactUs {
+        /* ContactUs page background */
+        background-color: green;
+    }
+    body.behindScene {
+        /* behindScene page background */
+        background-color: #6666ff;
+    }
+    body.Thanks {
+        /* Special Thanks background */
+        background-color: purple;
+    }
+    body.Video {
+        /* Page that needs to be created. */
+        background-color: pink;
+    }
+/************************************************************************/
+                                         /* Header */ 
+header {
+    background-color: #34282C;
+    color: white;
+    margin-top: 0px;
+    padding-top: 1em;
+    padding-right: 0em;
+    display: block;
+    height: 120px;
+    text-align: center;
+    padding-left: 0px;
+    background-position: right;
+    text-indent: 50px;
+}
+
+.logotext {
+    font-family: 'Vast Shadow', cursive;
+    background-color: #4b02fb; 
+    font-size: 3em; 
+}
+/**********************************************************************************/
+                                /* Div that contains everything */ 
+.Container {
+    width: 80%;
+    height: auto; /* To be fixed */
+    margin: 0px auto;
+    background-color: gray;
+}
+/**********************************************************************************/
+                                    /* Navigation bar */
+.TopNav {
+    background-color: pink;
+    font-family: font-family cursive, Arial, sans-serif;
+    display: block; 
+    text-align: center; 
+    padding: 1%;
+    width: 50em;  
+    padding-left: 19%; 
+    margin: 2%; 
+}
+/* Text inside nav bar. */
+.TopNav a {
+        background-color: inherit;
+        font-family: inherit;
+        text-decoration: none;
+        color: black;
+        font-size: 2em; 
+    }
+/* Action is user hovers */
+.TopNav a:hover {
+        background-color: darkorchid;
+    }
+
+/*Div that contains Everything in the drop box */
+.Dropbox {
+    padding: 0%;
+    float: right;
+}
+
+/* The button to the dropbox */
+.Drop_btn {
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    color: black;
+    font-size: 2em;
+}
+
+/* Content inside the dropbox */
+.Dropbox_Content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    min-width: 19em;
+    z-index: 1;
+    padding: 1% 2%; 
+}
+ 
+/* Stuff inside the boxes inside the dropbox */
+.Dropbox_Content a {
+        float: none;
+        padding: 5%;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        color: black;
+}
+
+.Dropbox_Content a:hover { 
+    background-color: darkorchid; 
+}
+.Dropbox:hover .Dropbox_Content { 
+    display: block; 
+}
+/**********************************************************************************/
+                                   /* Home page */
+
+/* Introduction text */
+.wrap {
+    padding-top: 50px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    line-height: 45px;
+    margin: 0; 
+}
+
+/* Text that informs user what each page is on Home Page */
+.Home_Intro {
+    font-family: cursive, 'Comic Sans MS', serif;
+    line-height: 5em;
+    padding-top: 20em;
+}
+
+/**********************************************************************************/
+                                    /* Story */
+
+/* Title text on Story page */
+.Act {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: dotted 5px;
+    padding-bottom: 5px;
+}
+
+/* Text on Story page. */
+.StoryText {
+    padding-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    line-height: 50px;
+}
+/* Text on the Special thanks page*/
+.ThanksText {
+    margin-bottom: 0px;  
+    padding-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    line-height: 40px;
+    font-size: 2em; 
+}
+
+/* Ending text on story page */
+.EndText {
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    font: 'Comic Sans MS';
+}
+
+/**********************************************************************************/
+                                    /* Contact us */
+/* Submit button styles on Contact us page. */
+.inputbtn {
+    width: 6em;
+    font-family: cursive, sans-serif;
+    height: 3em;
+    margin-top: 4%;
+}
+/* Title text in contact us page */
+.FormTitle {
+    font-size: 2.5em;
+    color: pink;
+    text-align: left;
+}
+
+form {
+    padding: 50px;
+    margin: 0, auto;
+    text-align: left;
+    line-height: 50px;
+}
+
+.FormText {
+    font-size: 25px;
+    padding-top: 3px;
+    margin: 0, auto;
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+/**********************************************************************************/
+                                    /* Episode page */
+/* Title text */ 
+.VideoTitle {
+    color: pink;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: dotted 5px;
+    padding-bottom: 5px;
+    font-family: cursive, serif;
+}
+
+/**********************************************************************************/
+                                    /* Characters page. */
+/* Text of characters name */
+.CharName {
+    font-family: cursive, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+/* Summary of each girl on characters page */
+.Sum {
+    padding: 2px;
+    font-family: 'Crafty Girls', cursive, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 25px;
+    line-height: 45px;
+}
+
+/* Style edits to character's picture. */
+.CharacterPicture {
+    text-align: center;
+}
+/**********************************************************************************/
+                                    /*Special Thanks */
+
+/* Title of names*/
+.Names {
+    color: snow;
+    font-size: xx-large;
+    text-align: center;
+}
+/* Style edits to links on Episode page */
+.Episode {
+    padding-left: 25%;
+    padding-bottom: 3%;
+}
+/**********************************************************************************/
+                                    /* Footer settings */
+footer {
+ 
+    width: 100%; 
+    background-color: #A9A9A9;
+    text-align: center;
+    padding: 0px; 
+    margin: 0, auto; 
+}
+/* Text inside footer */
+.footerText {
+    text-align: center;
+}
+/**********************************************************************************/
+.behindScene_Pictures {
+   text-align: center; 
+
+}
+
+
+
+.Picture3 {
+    float: right;
+}
